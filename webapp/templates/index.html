@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотекарь Колледжа</title>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <h1>📚 Доступные книги</h1>
+    <input type="text" id="searchInput" placeholder="Поиск книг..." oninput="searchBooks()">
+    <ul id="bookList"></ul>
+
+    <script>
+        function updateBookList(books) {
+            const list = document.getElementById('bookList');
+            list.innerHTML = "";
+            books.forEach(book => {
+                const li = document.createElement("li");
+                li.textContent = `${book.title} (${book.author}, ${book.year}) - ID: ${book.id}`;
+                list.appendChild(li);
+            });
+        }
+
+        async function searchBooks() {
+            const q = document.getElementById('searchInput').value;
+            const res = await fetch(`https://your-web-app-url.com/search?q= ${q}`);
+            const books = await res.json();
+            updateBookList(books);
+        }
+
+        // Загрузка всех книг при старте
+        fetch("https://your-web-app-url.com/books ")
+            .then(res => res.json())
+            .then(books => updateBookList(books));
+    </script>
+</body>
+</html>

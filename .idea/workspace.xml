@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b23ed753-ee83-4810-8fea-c6b92bbc1760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/static/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
@@ -15,7 +16,7 @@
       <change beforePath="$PROJECT_DIR$/handlers/book_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/book_handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/loan_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/loan_handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/reader_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/reader_handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -45,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748347364069</updated>
-      <workItem from="1748347365633" duration="2016000" />
+      <workItem from="1748347365633" duration="10500000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,560 @@
 2025-05-27 15:38:30,799 - __main__ - ERROR - Ошибка регистрации: name 'sqlite3' is not defined
 2025-05-27 15:38:38,853 - __main__ - ERROR - Ошибка регистрации: name 'sqlite3' is not defined
 2025-05-27 15:38:45,226 - __main__ - ERROR - Ошибка регистрации: name 'sqlite3' is not defined
+2025-05-27 15:44:58,462 - __main__ - ERROR - Ошибка регистрации: name 'sqlite3' is not defined
+2025-05-27 15:48:53,132 - __main__ - ERROR - Ошибка регистрации: name 'sqlite3' is not defined
+2025-05-27 15:49:04,785 - __main__ - ERROR - Ошибка регистрации: name 'sqlite3' is not defined
+2025-05-27 15:53:27,857 - __main__ - ERROR - Ошибка регистрации: name 'sqlite3' is not defined
+2025-05-27 17:47:53,935 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:54,019 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:54,095 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:54,172 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:54,247 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:56,691 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:57,903 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:58,590 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:47:59,438 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:48:03,243 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:48:03,538 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:48:03,791 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:48:04,202 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 17:48:17,675 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 54, in start
+    await update.message.reply_text("Добро пожаловать в 'Библиотекарь Колледжа'", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com /search' is invalid: disallowed character in url host
+2025-05-27 17:48:19,247 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 116, in handle_message
+    await update.message.reply_text("Выберите действие:", reply_markup=reply_markup)
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_message.py", line 1095, in reply_text
+    return await self.get_bot().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 2631, in send_message
+    return await super().send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 519, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 840, in send_message
+    return await self._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 529, in _send_message
+    result = await super()._send_message(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 697, in _send_message
+    result = await self._post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 607, in _post
+    return await self._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\_bot.py", line 635, in _do_post
+    return await request.post(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button web app url 'https://your-webapp-url.com ' is invalid: disallowed character in url host
+2025-05-27 18:05:56,681 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 62, in button_handler
+    await my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 7, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
+2025-05-27 18:05:58,781 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 62, in button_handler
+    await my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 7, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
+2025-05-27 18:15:12,231 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 57, in button_handler
+    await loan_handlers.my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 8, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
+2025-05-27 18:15:14,293 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 57, in button_handler
+    await loan_handlers.my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 8, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
+2025-05-27 18:23:45,247 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 66, in button_handler
+    await my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 13, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
+2025-05-27 18:24:04,722 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 66, in button_handler
+    await my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 13, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
+2025-05-27 18:24:19,420 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 66, in button_handler
+    await my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 13, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
+2025-05-27 18:24:22,527 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_application.py", line 1195, in process_update
+    await coroutine
+  File "F:\LibraryBot\tg_bot_lib\venv\lib\site-packages\telegram\ext\_basehandler.py", line 153, in handle_update
+    return await self.callback(update, context)
+  File "bot.py", line 66, in button_handler
+    await my_books(query, context)
+  File "F:\LibraryBot\tg_bot_lib\handlers\loan_handlers.py", line 13, in my_books
+    user_id = update.effective_user.id
+AttributeError: 'CallbackQuery' object has no attribute 'effective_user'
