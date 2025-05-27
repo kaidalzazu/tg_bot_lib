@@ -1,89 +1,63 @@
-from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
-from dotenv import load_dotenv
-import os
+import asyncio
 import logging
-from handlers import book_handlers
-from handlers import reader_handlers
-from handlers import loan_handlers
+import sys
+from os import getenv
 
-# Логирование ошибок
-logging.basicConfig(
-    filename='logs.txt',
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.ERROR
-)
-logger = logging.getLogger(__name__)
+from aiogram import Bot, Dispatcher, html
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
+from aiogram.filters import CommandStart, Command
+from aiogram.types import Message
 
-# Загрузка токена
-load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")
+# Bot token can be obtained via https://t.me/BotFather
+TOKEN = getenv("BOT_TOKEN")
 
-# --- СОСТОЯНИЯ ---
-STATE_REGISTER = "register"
+# All handlers should be attached to the Router (or Dispatcher)
 
-# --- ОСНОВНЫЕ ФУНКЦИИ ---
+dp = Dispatcher()
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user = update.effective_user
-    registered = await reader_handlers.register_reader(update, context)
 
-    if not registered:
-        # Переход в состояние регистрации
-        context.user_data['state'] = STATE_REGISTER
-    else:
-        context.user_data.clear()
+@dp.message(CommandStart())
+async def command_start_handler(message: Message) -> None:
+    await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!")
 
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    state = context.user_data.get('state')
+@dp.message(Command('openWindow'))
+async def command_openWindow_handler(message: Message) -> None:
+    markup = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(
+                    text='Open',
+                    web_app=WebAppInfo(url=f'https://www.google.co.uk/'),
+                )
+            ]
+        ]
+    )
+    await message.answer("Start", reply_markup=markup)
 
-    if state == STATE_REGISTER:
-        text = update.message.text.strip()
-        parts = text.split()
-        if len(parts) < 3:
-            await update.message.reply_text("❌ Введите ФИО и группу через пробел.\nПример: Иван Иванов ИВТ-23")
-            return
+@dp.message()
+async def echo_handler(message: Message) -> None:
+    """
+    Handler will forward receive a message back to the sender
 
-        name = ' '.join(parts[:2])
-        group = ' '.join(parts[2:])
+    By default, message handler will handle all message types (like a text, photo, sticker etc.)
+    """
+    try:
+        # Send a copy of the received message
+        await message.send_copy(chat_id=message.chat.id)
+    except TypeError:
+        # But not all the types is supported to be copied so need to handle it
+        await message.answer("Nice try!")
 
-        conn = None
-        try:
-            conn = sqlite3.connect('library.db')
-            cur = conn.cursor()
-            cur.execute("INSERT INTO readers(telegram_id, name, group_department) VALUES(?,?,?)",
-                        (update.effective_user.id, name, group))
-            conn.commit()
-            await update.message.reply_text(f"✅ Привет, {name} из {group}!", reply_markup=loan_handlers.MAIN_MENU)
-            context.user_data.clear()
-        except Exception as e:
-            logger.error(f"Ошибка регистрации: {e}")
-            await update.message.reply_text("❌ Ошибка регистрации.")
-        finally:
-            if conn:
-                conn.close()
-    elif update.message.text.lower() == "📦 получить книгу":
-        await update.message.reply_text("Введите ID книги:")
-    elif update.message.text.lower() == "⮿ вернуть книгу":
-        await update.message.reply_text("Введите ID выдачи (не ID книги):")
-    elif update.message.text.lower() == "📚 доступные книги":
-        await book_handlers.list_books(update, context)
-    elif update.message.text.lower() == "📖 мои книги":
-        await loan_handlers.my_books(update, context)
-    else:
-        await update.message.reply_text("Выберите действие из меню.", reply_markup=loan_handlers.MAIN_MENU)
 
-# --- ЗАПУСК БОТА ---
+async def main() -> None:
+    # Initialize Bot instance with default bot properties which will be passed to all API calls
+    bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
-def main():
-    app = ApplicationBuilder().token(TOKEN).build()
+    # And the run events dispatching
+    await dp.start_polling(bot)
 
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("books", book_handlers.list_books))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-    print("Бот запущен...")
-    app.run_polling()
-
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, stream=sys.stdout)
+    asyncio.run(main())
