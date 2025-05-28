@@ -84,7 +84,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         name = ' '.join(parts[:2])
         group = ' '.join(parts[2:])
         telegram_id = update.effective_user.id
-
+        # конец
         conn = None
         try:
             conn = sqlite3.connect('library.db')

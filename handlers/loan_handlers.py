@@ -123,3 +123,4 @@ async def check_overdue_books(context: ContextTypes.DEFAULT_TYPE):
             logger.info(f"Автоматически возвращена книга {book_id}, выдача #{loan_id}")
     finally:
         conn.close()
+        # конец

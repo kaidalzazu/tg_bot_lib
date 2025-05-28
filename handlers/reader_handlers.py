@@ -20,3 +20,4 @@ async def register_reader(update: Update, context: ContextTypes.DEFAULT_TYPE):
     finally:
         if conn:
             conn.close()
+            # конец
